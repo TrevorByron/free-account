@@ -101,7 +101,7 @@ $upload-size: 100%;
     background-color:  rgba(255, 255, 255, 0.8);
     bottom: 0;
     color: black;
-    content: "Add logo";
+    content: "Edit logo";
     font-weight: bold;
     display: block;
     height: 100%;
@@ -208,7 +208,6 @@ $file-hover-icon-size: 5em;
       height: fit-content;
     }
 
-
   }
 
   select {
@@ -222,19 +221,27 @@ $file-hover-icon-size: 5em;
     font-size: 14px;
     line-height: 16px;
     width: 100%;
+  }
 
-    background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1em + 2px),
-    calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
-  background-size:
-    5px 5px,
-    5px 5px,
-    1px 1.5em;
-  background-repeat: no-repeat;
+  label {
+    font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+color: #707070;
+  }
+
+  &_general-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &_input-fields {
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+  }
+
+  &_input-fields--half {
+        flex: 2 1 320px;
   }
 }
