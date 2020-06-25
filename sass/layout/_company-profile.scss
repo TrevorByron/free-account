@@ -199,6 +199,7 @@ $file-hover-icon-size: 5em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 24px;
 
     &_logo {
       margin-right: 24px;
@@ -230,9 +231,16 @@ line-height: 20px;
 color: #707070;
   }
 
+  h3 {
+    font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+  }
+
   &_general-info {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 24px;
   }
 
   &_input-fields {
