@@ -39,6 +39,7 @@ $body-text-color: #fff;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+      border-radius: 100%;
 
   &.aspect-square {
     &:before {
@@ -64,6 +65,7 @@ $panel-padding: 1em;
   border: 1px solid #F4F5F6;
   border-radius: 2px;
   padding: 2px;
+      border-radius: 100%;
 
 
   &-head {
@@ -121,8 +123,8 @@ $upload-size: 100%;
   }
 
   &__icon {
-    left: 103px;
-    top: -19px;
+    left: 83px;
+    top: -4px;
     color: #919CA1;
     position: absolute;
     transition: transform $global-delay ease,
@@ -222,6 +224,7 @@ $file-hover-icon-size: 5em;
     font-size: 14px;
     line-height: 16px;
     width: 100%;
+    margin-top: 8px;
   }
 
   label {
@@ -229,19 +232,46 @@ $file-hover-icon-size: 5em;
 font-size: 14px;
 line-height: 20px;
 color: #707070;
+margin-bottom: 6px;
   }
-
-  h3 {
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+  h2 {
     font-weight: 500;
 font-size: 20px;
 line-height: 32px;
+margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 11px;
+line-height: 16px;
+text-transform: uppercase;
+font-weight: 400;
+margin-bottom: 12px;
+  }
+
+  input {
+      margin-top: 8px;
   }
 
   &_general-info {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 24px;
+    margin-bottom: 56px;
+
   }
+
+
+    &_area-of-coverage {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+      width: 100%;
+
+    }
 
   &_input-fields {
     margin-right: 16px;
@@ -252,4 +282,16 @@ line-height: 32px;
   &_input-fields--half {
         flex: 2 1 320px;
   }
+
+  &_input-fields--thirds {
+        flex: 1 ;
+  }
+
+
+
+  &_input-fields--full {
+        flex: 0 0 100%;
+  }
+
+
 }
