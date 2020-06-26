@@ -230,6 +230,11 @@ button {
   vertical-align: middle;
   white-space: nowrap;
 }
+button .material-icons {
+  transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+}
 
 button label {
   line-height: 32px;
