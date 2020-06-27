@@ -230,7 +230,7 @@ button {
   vertical-align: middle;
   white-space: nowrap;
 }
-button .material-icons {
+button .material-icons-round {
   transform: translate(-50%);
   position: absolute;
   left: 50%;
@@ -1912,6 +1912,220 @@ input[type=radio] {
 }
 .form-container_input-fields--full {
   flex: 0 0 100%;
+}
+
+.construction-network-search {
+  margin: 0 auto;
+  padding: 32px calc(20% + 24px);
+  background: #fff;
+  box-shadow: 0px 2px 5px #D4D7E4;
+  margin-bottom: 32px;
+  opacity: 0%;
+  animation-delay: 0ms;
+  animation: FadeIn 500ms;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 64px;
+  z-index: 10000;
+  width: 100%;
+  justify-content: center;
+}
+.construction-network-search form {
+  display: flex;
+}
+.construction-network-search button {
+  margin: 0;
+  height: 40px;
+}
+.construction-network-search input[type=text] {
+  width: 120px;
+  background: #fff url(../img/location_on-24px.svg) no-repeat 9px center;
+  padding: 12px 12px 12px 40px;
+  margin-right: 8px;
+}
+.construction-network-search input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.construction-network-search input::-webkit-search-decoration,
+.construction-network-search input::-webkit-search-cancel-button {
+  display: none;
+}
+.construction-network-search input[type=search] {
+  background: #fff url(../img/search-24px.svg) no-repeat 9px center;
+  padding: 12px 12px 12px 40px;
+  width: 540px;
+}
+.construction-network-search input:-moz-placeholder {
+  color: #999;
+  font-size: 14px;
+}
+.construction-network-search input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.business-srp-page {
+  display: flex;
+  margin: 0 auto;
+  padding: 0px 24px;
+  opacity: 0%;
+  animation-delay: 0ms;
+  animation: FadeIn 1000ms;
+  animation-fill-mode: forwards;
+  margin-top: 200px;
+}
+.business-srp-page_filters {
+  width: 20%;
+  height: 100vh;
+  padding: 8px;
+  padding-top: 64px;
+  text-align: center;
+}
+.business-srp-page_filters h1 {
+  color: grey;
+}
+.business-srp-page_results {
+  width: 50%;
+  height: 100vh;
+  padding: 8px;
+}
+.business-srp-page_results_header {
+  margin-bottom: 24px;
+}
+.business-srp-page_results_cards_listing {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 25px #D4D7E4;
+  border-radius: 8px;
+  display: flex;
+  transition: 300ms;
+  border: 1px solid #fff;
+  opacity: 0%;
+  animation: tileAppear 500ms cubic-bezier(0, 0, 0, 1.47);
+  animation-fill-mode: forwards;
+  padding: 24px;
+  color: #171A1C;
+  margin-bottom: 16px;
+}
+.business-srp-page_results_cards_listing:hover {
+  box-shadow: 0px 2px 5px #D4D7E4;
+  border: 1px solid #2066DF;
+  cursor: pointer;
+}
+.business-srp-page_results_cards_listing .listing_logo {
+  width: 160px;
+  height: 160px;
+  margin-right: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  border: 1px solid #F4F5F6;
+}
+.business-srp-page_results_cards_listing .listing_logo_turner {
+  background-image: url(../img/turner.png);
+}
+.business-srp-page_results_cards_listing .listing_logo_AC {
+  background-image: url(../img/ACelectric.png);
+}
+.business-srp-page_results_cards_listing .listing_logo_JP {
+  background-image: url(../img/jim-peterson.png);
+}
+.business-srp-page_results_cards_listing .listing_info_heading {
+  font-size: 14px;
+  font-weight: normal;
+  color: #5E696E;
+  width: 100%;
+}
+.business-srp-page_results_cards_listing .listing_info_name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.business-srp-page_results_cards_listing .listing_info_work-performed {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.business-srp-page_results_cards_listing .listing_info_market-sector {
+  font-size: 14px;
+  line-height: 20px;
+}
+.business-srp-page_results_cards_listing .listing_info_area-covered {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.business-srp-page_results_cards_listing .listing_info_certifications {
+  display: flex;
+  flex-wrap: wrap;
+}
+.business-srp-page_results_cards_listing .listing_info_certifications_token {
+  background-color: #1D5CC9;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+.business-srp-page_results_cards_listing .listing_info_certifications_token i {
+  font-size: 15px;
+  margin-right: 4px;
+}
+.business-srp-page_maps-and-links {
+  width: 30%;
+  height: 100vh;
+  padding: 8px;
+  padding-top: 64px;
+}
+.business-srp-page_maps-and-links_map {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 400px;
+  margin-bottom: 16px;
+  box-shadow: 0px 1px 2px #D4D7E4;
+  padding: 8px;
+  background: #fff;
+}
+.business-srp-page_maps-and-links_link {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 16px;
+  display: flex;
+  box-shadow: 0px 1px 2px #D4D7E4;
+  margin-bottom: 16px;
+}
+.business-srp-page_maps-and-links_link .add-icon {
+  width: 48px;
+  margin-right: 12px;
+}
+.business-srp-page_maps-and-links_link .add-icon img {
+  position: relative;
+  top: 5px;
+}
+.business-srp-page_maps-and-links_link .add-content h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.business-srp-page_maps-and-links_link .add-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+.business-srp-page_maps-and-links_link .add-content a {
+  font-size: 14px;
+  color: #FF5200;
 }
 
 .iodine-body {
