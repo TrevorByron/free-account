@@ -88,10 +88,7 @@ a {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-0.5rem);
+    transform: translateX(5rem);
   }
   100% {
     opacity: 1;
@@ -206,10 +203,10 @@ input:focus {
 
 h1 {
   color: #232729;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 32px;
   letter-spacing: 0.15px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 button {
@@ -1442,6 +1439,10 @@ card card-bg {
   animation: FadeIn 500ms;
   animation-fill-mode: forwards;
 }
+.page-content h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
 
 .search-and-filter {
   width: 402px;
@@ -2002,7 +2003,7 @@ input[type=radio] {
   transition: 300ms;
   border: 1px solid #fff;
   opacity: 0%;
-  animation: tileAppear 500ms cubic-bezier(0, 0, 0, 1.47);
+  animation: tileAppear 1000ms cubic-bezier(0, 0, 0, 1.47);
   animation-fill-mode: forwards;
   padding: 24px;
   color: #171A1C;
@@ -2096,6 +2097,9 @@ input[type=radio] {
   box-shadow: 0px 1px 2px #D4D7E4;
   padding: 8px;
   background: #fff;
+  animation-delay: 0ms;
+  animation: moveInRight 800ms;
+  animation-fill-mode: forwards;
 }
 .business-srp-page_maps-and-links_link {
   background: #fff;
@@ -2105,6 +2109,9 @@ input[type=radio] {
   display: flex;
   box-shadow: 0px 1px 2px #D4D7E4;
   margin-bottom: 16px;
+  animation-delay: 0ms;
+  animation: moveInRight 800ms;
+  animation-fill-mode: forwards;
 }
 .business-srp-page_maps-and-links_link .add-icon {
   width: 48px;
