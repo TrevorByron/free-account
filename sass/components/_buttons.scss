@@ -1059,6 +1059,13 @@ body.dark .filters_item {
   border: 1px solid hsl(200, 8%, 20%);
 }
 
+
+body.dark .call-to-action, body.dark .business-srp-page_results_cards_listing, body.dark .construction-network-search, body.dark .business-srp-page_maps-and-links_link, body.dark .business-srp-page_maps-and-links_map {
+
+  background: hsl(200, 8%, 15%);
+  box-shadow: 0 0 16px -4px black;
+  border: 1px solid hsl(200, 8%, 20%);
+}
 body.dark [value="Invited"]:checked ~ .filters [for="Invited"],
 body.dark [value="Pursuing"]:checked ~ .filters [for="Pursuing"],
 body.dark [value="Submitted"]:checked ~ .filters [for="Submitted"],

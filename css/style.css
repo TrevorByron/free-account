@@ -1289,6 +1289,12 @@ body.dark .filters_item {
   border: 1px solid #2f3437;
 }
 
+body.dark .call-to-action, body.dark .business-srp-page_results_cards_listing, body.dark .construction-network-search, body.dark .business-srp-page_maps-and-links_link, body.dark .business-srp-page_maps-and-links_map {
+  background: #232729;
+  box-shadow: 0 0 16px -4px black;
+  border: 1px solid #2f3437;
+}
+
 body.dark [value=Invited]:checked ~ .filters [for=Invited],
 body.dark [value=Pursuing]:checked ~ .filters [for=Pursuing],
 body.dark [value=Submitted]:checked ~ .filters [for=Submitted],
@@ -1944,11 +1950,40 @@ input[type=radio] {
   margin: 0;
   height: 40px;
 }
-.construction-network-search input[type=text] {
+.construction-network-search .zip {
   width: 120px;
   background: #fff url(../img/location_on-24px.svg) no-repeat 9px center;
   padding: 12px 12px 12px 40px;
   margin-right: 8px;
+}
+.construction-network-search input[type=text] {
+  width: 120px;
+  margin-right: 8px;
+}
+.construction-network-search select {
+  width: 120px;
+  margin-right: 8px;
+  padding: 12px 12px 12px 12px;
+  color: #999;
+  font-size: 14px;
+  padding: 9px 12px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 0 1px #75838a;
+  border-radius: 2px;
+  color: #2f3437;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  background: #fff url(../img/expand_more-24px.svg) no-repeat 89px center;
+  -webkit-appearance: none;
+}
+.construction-network-search select:hover {
+  cursor: pointer;
+}
+.construction-network-search select:focus {
+  box-shadow: 0 0 0 1px #2066df, 0 0 0 3px #e4edfb;
+  outline: none;
 }
 .construction-network-search input[type=search] {
   -webkit-appearance: textfield;
@@ -1963,7 +1998,7 @@ input[type=radio] {
 .construction-network-search input[type=search] {
   background: #fff url(../img/search-24px.svg) no-repeat 9px center;
   padding: 12px 12px 12px 40px;
-  width: 540px;
+  width: 420px;
 }
 .construction-network-search input:-moz-placeholder {
   color: #999;
@@ -2024,6 +2059,7 @@ input[type=radio] {
   width: 160px;
   height: 160px;
   margin-right: 16px;
+  background-color: #fff;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -22,12 +22,46 @@
     height: 40px;
   }
 
-input[type=text] {
+.zip {
  width: 120px;
  background: #fff url(../img/location_on-24px.svg) no-repeat 9px center;
  padding: 12px 12px 12px 40px;
  margin-right: 8px;
 }
+
+input[type=text] {
+ width: 120px;
+ margin-right: 8px;
+}
+select {
+  width: 120px;
+  margin-right: 8px;
+  padding: 12px 12px 12px 12px;
+  color: #999;
+  font-size: 14px;
+  padding: 9px 12px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 0 1px #75838a;
+    border-radius: 2px;
+    color: #2f3437;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    background: #fff url(../img/expand_more-24px.svg) no-repeat 89px center;
+    -webkit-appearance: none;
+
+
+    &:hover  {
+    cursor: pointer;
+}
+
+    &:focus {
+      box-shadow: 0 0 0 1px #2066df, 0 0 0 3px #e4edfb;
+    outline: none;
+    }
+}
+
 input[type=search] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
@@ -43,7 +77,7 @@ input::-webkit-search-cancel-button {
 input[type=search] {
 	background: #fff url(../img/search-24px.svg) no-repeat 9px center;
 	padding: 12px 12px 12px 40px;
-	width: 540px;
+	width: 420px;
 }
 input[type=search]:focus {
 
@@ -122,6 +156,7 @@ input::-webkit-input-placeholder {
        width: 160px;
        height: 160px;
        margin-right: 16px;
+       background-color: #fff;
        background-size: contain;
        background-position: center;
        background-repeat: no-repeat;

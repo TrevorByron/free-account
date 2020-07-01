@@ -64,7 +64,11 @@
 <div class="construction-network-search">
   <form>
   	<input type="search" placeholder="Search GC's or Specialty Contractors (e.g. Electrical, Concrete, etc)">
-    <input type="text" name="" value="78620">
+    <select id="search-selector" name="search-selector">
+      <option value="Companies">Companies</option>
+      <option value="Projects">Projects</option>
+    </select>
+    <input class="zip" type="text" name="" value="78620">
     <button class=""><spinner><svg class="spinner" viewBox="0 0 48 48">
       <circle class="path" cx="24" cy="24" r="20" fill="none" stroke-width="8"></circle>
     </svg></spinner><label>Search</label>
