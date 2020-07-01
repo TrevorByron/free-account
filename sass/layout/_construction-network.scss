@@ -1,8 +1,8 @@
 .construction-network-search {
   margin: 0 auto;
-  padding: 32px calc(20% + 24px);
+  padding: 24px calc(20% + 24px);
   background: #fff;
-  box-shadow: 0px 2px 5px #D4D7E4;
+  box-shadow: 0px 2px 5px #00000014;
   margin-bottom: 32px;
   opacity: 0%;
   animation-delay: 0ms;
@@ -133,6 +133,9 @@ input::-webkit-input-placeholder {
          background-image: url(../img/turner.png);
        }
 
+       &_unander {
+         background-image: url(../img/unander-logo.png);
+       }
        &_AC {
          background-image: url(../img/ACelectric.png);
        }

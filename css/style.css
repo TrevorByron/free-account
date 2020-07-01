@@ -105,6 +105,16 @@ a {
     transform: translate(0);
   }
 }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 @keyframes FadeIn {
   0% {
     opacity: 0;
@@ -248,10 +258,6 @@ button.secondary {
   border: 1px solid #d9d9d9;
   border-radius: 2px;
   color: grey;
-}
-
-a {
-  color: #2066df;
 }
 
 @font-face {
@@ -1917,9 +1923,9 @@ input[type=radio] {
 
 .construction-network-search {
   margin: 0 auto;
-  padding: 32px calc(20% + 24px);
+  padding: 24px calc(20% + 24px);
   background: #fff;
-  box-shadow: 0px 2px 5px #D4D7E4;
+  box-shadow: 0px 2px 5px #00000014;
   margin-bottom: 32px;
   opacity: 0%;
   animation-delay: 0ms;
@@ -2027,6 +2033,9 @@ input[type=radio] {
 .business-srp-page_results_cards_listing .listing_logo_turner {
   background-image: url(../img/turner.png);
 }
+.business-srp-page_results_cards_listing .listing_logo_unander {
+  background-image: url(../img/unander-logo.png);
+}
 .business-srp-page_results_cards_listing .listing_logo_AC {
   background-image: url(../img/ACelectric.png);
 }
@@ -2133,6 +2142,178 @@ input[type=radio] {
 .business-srp-page_maps-and-links_link .add-content a {
   font-size: 14px;
   color: #FF5200;
+}
+
+.hero {
+  height: 200px;
+  width: 100vw;
+  margin-top: 64px;
+  opacity: 0%;
+  animation: FadeIn 1000ms;
+  animation-fill-mode: forwards;
+  z-index: 0;
+  background-color: #000;
+}
+
+.unander-hero {
+  background-image: url(../img/portfolio.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.company-page {
+  max-width: 1200px;
+  padding: 0px 24px;
+  margin: 0 auto;
+  opacity: 0%;
+  animation: FadeIn 1000ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.company-page .general-information {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(-80px);
+  align-items: baseline;
+  width: 60%;
+  margin-right: 32px;
+}
+.company-page .listing_logo {
+  width: 160px;
+  height: 160px;
+  margin-right: 16px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  border: 1px solid #F4F5F6;
+}
+.company-page .listing_logo_turner {
+  background-image: url(../img/turner.png);
+}
+.company-page .listing_logo_AC {
+  background-image: url(../img/ACelectric.png);
+}
+.company-page .listing_logo_JP {
+  background-image: url(../img/jim-peterson.png);
+}
+.company-page .listing_logo_unander {
+  background-image: url(../img/unander-logo.png);
+}
+.company-page .company-name {
+  margin-bottom: 32px;
+}
+.company-page .services {
+  margin-bottom: 24px;
+}
+.company-page .services ul {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.company-page .services ul li {
+  display: inline-block;
+  padding-right: 4px;
+  margin-right: 4px;
+  line-height: 14px;
+  font-weight: 600px;
+  color: #5E696E;
+}
+.company-page .services ul li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.company-page .company-Description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.company-page button {
+  margin-bottom: 24px;
+}
+.company-page .call-to-action {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 25px #D4D7E4;
+  border-radius: 8px;
+  padding: 32px;
+  width: 35%;
+  height: fit-content;
+}
+.company-page .call-to-action button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.company-page .profile-images {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.company-page .profile-images .image-1 {
+  width: 50%;
+  height: 100%;
+  background: grey;
+  border-radius: 0px;
+  background-image: url(../img/image-1.jpg);
+  background-position: center;
+}
+.company-page .profile-images .image-group {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-page .profile-images .profile-image {
+  height: 50%;
+  width: 50%;
+}
+.company-page .profile-images .profile-image:nth-child(1) {
+  padding: 0 8px 8px 8px;
+}
+.company-page .profile-images .profile-image:nth-child(2) {
+  padding: 0 0px 8px 0px;
+}
+.company-page .profile-images .profile-image:nth-child(3) {
+  padding: 0 8px 0px 8px;
+}
+.company-page .profile-images .image-2 {
+  background-image: url(../img/image-2.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.company-page .profile-images .image-3 {
+  background-image: url(../img/image-3.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.company-page .profile-images .image-4 {
+  background-image: url(../img/image-4.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.company-page .profile-images .image-5 {
+  background-image: url(../img/image-5.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.company-page .view-more {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  margin: 0;
+  box-shadow: 0px 10px 25px #00000069;
 }
 
 .iodine-body {
